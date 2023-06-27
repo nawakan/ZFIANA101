@@ -1,0 +1,1 @@
+function initModel(){var a="/sap/opu/odata/sap/ZA_CU_Q_FI_016_CDS/";var e=new sap.ui.model.odata.ODataModel(a,true);sap.ui.getCore().setModel(e)}

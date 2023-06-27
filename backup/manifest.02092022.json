@@ -1,0 +1,860 @@
+{
+    "_version": "1.7.0",
+    "start_url": "start.html",
+    "sap.app": {
+        "id": "com.cu.ovp.fi002.ZCU_OVP_FI002",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{app_title}}",
+        "description": "{{app_description}}",
+        "dataSources": {
+            "ZA_CU_Q_FI_003_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_003_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi003"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "ZA_CU_Q_FI_002_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_002_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi002"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi002": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_002_CDS/annotation_fi002.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi002.xml"
+                }
+            },
+            "annotation_fi003": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_003_CDS/annotation_fi003.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi003.xml"
+                }
+            },
+            "ZA_CU_Q_FI_004_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_004_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi004"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi004": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_004_CDS/annotation_fi004.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi004.xml"
+                }
+            },
+            "ZA_CU_Q_FI_005_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_005_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi005"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi005": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_005_CDS/annotation_fi005.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi005.xml"
+                }
+            },
+            "ZA_CU_Q_FI_006_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_006_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi006"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi006": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_006_CDS/annotation_fi006.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi006.xml"
+                }
+            },
+            "ZA_CU_Q_FI_007_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_007_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi007"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi007": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_007_CDS/annotation_fi007.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi007.xml"
+                }
+            },
+            "ZA_CU_Q_FI_008_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_008_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi008"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi008": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_008_CDS/annotation_fi008.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi008.xml"
+                }
+            },
+            "ZA_CU_Q_FI_009_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_009_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi009"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi009": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_009_CDS/annotation_fi009.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi009.xml"
+                }
+            },
+            "ZA_CU_Q_FI_010_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_010_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi010"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi010": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_010_CDS/annotation_fi010.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi010.xml"
+                }
+            },
+            "ZA_CU_Q_FI_011_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_011_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi011"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi011": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_011_CDS/annotation_fi011.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi011.xml"
+                }
+            },
+            "ZA_CU_Q_FI_012_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_012_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi012"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi012": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_012_CDS/annotation_fi012.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi012.xml"
+                }
+            },
+            "ZA_CU_Q_FI_013_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_013_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi013"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "ZZA_CU_Q_FI_013_CDS": {
+                "uri": "/sap/opu/odata/sap/ZZA_CU_Q_FI_013_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi013_2"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "ZA_CU_Q_FI_014_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_014_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi014"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "ZZA_CU_Q_FI_014_CDS": {
+                "uri": "/sap/opu/odata/sap/ZZA_CU_Q_FI_014_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi014_2"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi013": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_013_CDS/annotation_fi013.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi013.xml"
+                }
+            },
+            "annotation_fi013_2": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZZA_CU_Q_FI_013_CDS/annotation_fi013_2.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi013_2.xml"
+                }
+            },
+            "annotation_fi014": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_014_CDS/annotation_fi014.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi014.xml"
+                }
+            },
+            "annotation_fi014_2": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZZA_CU_Q_FI_014_CDS/annotation_fi014_2.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi014_2.xml"
+                }
+            },
+            "ZA_CU_Q_FI_015_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_015_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi015"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi015": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_015_CDS/annotation_fi015.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi015.xml"
+                }
+            },
+            "ZA_CU_Q_FI_016_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_016_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi016"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi016": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZA_CU_Q_FI_016_CDS/annotation_fi016.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi016.xml"
+                }
+            },
+            "ZZA_CU_Q_FI_016_CDS": {
+                "uri": "/sap/opu/odata/sap/ZZA_CU_Q_FI_016_CDS/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [
+                        "annotation_fi016_2"
+                    ],
+                    "localUri": "localService/metadata.xml"
+                }
+            },
+            "annotation_fi016_2": {
+                "type": "ODataAnnotation",
+                "uri": "localService/ZZA_CU_Q_FI_016_CDS/annotation_fi016_2.xml",
+                "settings": {
+                    "localUri": "localService/annotation_fi016_2.xml"
+                }
+            }
+        },
+        "sourceTemplate": {
+            "id": "servicecatalog.connectivityComponentForManifest",
+            "version": "0.0.0",
+            "toolsId": "318ab660-f004-40dd-8bf2-d8aff9d1ddb5"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.65.6",
+            "libs": {
+                "sap.ovp": {}
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "@i18n": {
+                "preload": true,
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "ZA_CU_Q_FI_003_CDS": {
+                "dataSource": "ZA_CU_Q_FI_003_CDS",
+                "settings": {
+                    "defaultCountMode": "Inline"
+                }
+            },
+            "ZA_CU_Q_FI_002_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_002_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_004_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_004_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_005_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_005_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_006_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_006_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_007_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_007_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_008_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_008_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_009_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_009_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_010_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_010_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_011_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_011_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_012_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_012_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_013_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_013_CDS",
+                "preload": true
+            },
+            "ZZA_CU_Q_FI_013_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZZA_CU_Q_FI_013_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_014_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_014_CDS",
+                "preload": true
+            },
+            "ZZA_CU_Q_FI_014_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZZA_CU_Q_FI_014_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_015_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_015_CDS",
+                "preload": true
+            },
+            "ZA_CU_Q_FI_016_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZA_CU_Q_FI_016_CDS",
+                "preload": true
+            },
+            "ZZA_CU_Q_FI_016_CDS": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZZA_CU_Q_FI_016_CDS",
+                "preload": true
+            }
+        },
+        "extends": {
+            "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.ovp.app.Main": {
+                        "controllerName": "com.cu.ovp.fi002.ZCU_OVP_FI002.ext.custom"
+                    }
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    },
+    "sap.ovp": {
+        "globalFilterModel": "ZA_CU_Q_FI_016_CDS",
+        "globalFilterEntityType": "ZA_CU_Q_FI_016Result",
+        "containerLayout": "resizable",
+        "enableLiveFilter": false,
+        "considerAnalyticalParameters": true,
+        "chartSettings": {
+            "showDataLabel": false
+        },
+        "cards": {
+            "card00": {
+                "model": "ZZA_CU_Q_FI_014_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card00_title}}",
+                    "entitySet": "ZZA_CU_Q_FI_014Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDRev001",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Selection01",
+                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#chartrevbyYear",
+                    "navigation": "dataPointNav",
+                    "defaultSpan": {
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1657262097845"
+                    }
+                }
+            },
+            "card01": {
+                "model": "ZZA_CU_Q_FI_013_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card01_title}}",
+                    "entitySet": "ZZA_CU_Q_FI_013Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExp001",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Selection01",
+                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#chartexpbyYear",
+                    "navigation": "dataPointNav",
+                    "defaultSpan": {
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1657264103615"
+                    }
+                }
+            },
+            "card02": {
+                "model": "ZZA_CU_Q_FI_016_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card03_title}}",
+                    "entitySet": "ZZA_CU_Q_FI_016Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExpRev001",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "defaultSpan": {
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1657268277119"
+                    },
+                    "tabs": [
+                        {
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExpRev001",
+                            "navigation": "dataPointNav",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KPIExpRevF2byMonth",
+                            "value": "แหล่งเงินรายได้ ตามเดือน"
+                        },
+                        {
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExpRev001",
+                            "navigation": "dataPointNav",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KPIExpRevF2byBusArea",
+                            "value": "แหล่งเงินรายได้ ตามประเภทธุรกิจ"
+                        },
+                        {
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExpRev001",
+                            "navigation": "dataPointNav",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KPIExpRevF1byMonth",
+                            "value": "แหล่งเงินแผ่นดิน ตามเดือน"
+                        },
+                        {
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#IDExpRev001",
+                            "navigation": "dataPointNav",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KPIExpRevF1byBusArea",
+                            "value": "แหล่งเงินแผ่นดิน ตามประเภทธุรกิจ"
+                        },
+                        {
+                            "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SVExpRevbyMonth",
+                            "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#PVExpRevbyMonth",
+                            "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#ChartExpRevbyMonth",
+                            "value": "แหล่งเงินรวม ตามเดือน"
+                        },
+                        {
+                            "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SVExpRevbyBusArea",
+                            "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#PVExpRevbyBusArea",
+                            "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#ChartExpRevbyBusArea",
+                            "value": "แหล่งเงินรวม ตามประเภทธุรกิจ"
+                        }
+                    ]
+                }
+            },
+            "card_05": {
+                "model": "ZA_CU_Q_FI_005_CDS",
+                "template": "sap.ovp.cards.linklist",
+                "settings": {
+                    "title": "{{card05_title}}",
+                    "entitySet": "ZA_CU_Q_FI_005",
+                    "listFlavor": "carousel",
+                    "defaultSpan": {
+                        "rows": 35,
+                        "cols": 1
+                    },
+                    "staticContent": [
+                        {
+                            "imageUri": "../img/RemarkFICard3.png",
+                            "openInNewWindow": false
+                        },
+                        {
+                            "imageUri": "../img/RemarkFICard5.png",
+                            "openInNewWindow": false
+                        },
+                        {
+                            "imageUri": "../img/RemarkFICard6.png",
+                            "openInNewWindow": false
+                        },
+                        {
+                            "imageUri": "../img/RemarkFICard7.png",
+                            "openInNewWindow": false
+                        },
+                        {
+                            "imageUri": "../img/RemarkFICardAll.png",
+                            "openInNewWindow": false
+                        }
+                    ]
+                }
+            },
+            "card09": {
+                "model": "ZA_CU_Q_FI_009_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card09_title}}",
+                    "entitySet": "ZA_CU_Q_FI_009Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "customParams": "FilterPeriod",
+                    "defaultSpan": {
+                        "showOnlyHeader": false,
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1573439591022",
+                        "ViewId": "V20191111023345.2568370"
+                    },
+                    "tabs": [
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyYear",
+                            "value": "ปีบัญชี"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyQuart",
+                            "value": "ไตรมาส"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyMonth",
+                            "value": "งวด"
+                        }
+                    ]
+                }
+            },
+            "card10": {
+                "model": "ZA_CU_Q_FI_009_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card10_title}}",
+                    "entitySet": "ZA_CU_Q_FI_009Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "customParams": "FilterPeriod",
+                    "defaultSpan": {
+                        "showOnlyHeader": false,
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1573441305488",
+                        "ViewId": "V20191111030208.2877370"
+                    },
+                    "tabs": [
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyYear",
+                            "value": "ปีบัญชี"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyQuart",
+                            "value": "ไตรมาส"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyMonth",
+                            "value": "งวด"
+                        }
+                    ]
+                }
+            },
+            "card11": {
+                "model": "ZA_CU_Q_FI_010_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card11_title}}",
+                    "entitySet": "ZA_CU_Q_FI_010Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "customParams": "FilterPeriod",
+                    "defaultSpan": {
+                        "showOnlyHeader": false,
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1573440697257",
+                        "ViewId": "V20191111025150.3269640"
+                    },
+                    "tabs": [
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyYear",
+                            "value": "ปีบัญชี"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyQuart",
+                            "value": "ไตรมาส"
+                        },
+                        {
+                            "navigation": "dataPointNav",
+                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
+                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyMonth",
+                            "value": "งวด"
+                        }
+                    ]
+                }
+            },
+            "card12": {
+                "model": "ZA_CU_Q_FI_011_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card12_title}}",
+                    "subTitle": "{{card12_subtitle}}",
+                    "entitySet": "ZA_CU_Q_FI_011Results",
+                    "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiROIbyYear",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_011_ssb",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "defaultSpan": {
+                        "showOnlyHeader": false,
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1573441497777",
+                        "ViewId": "V20191111030538.0858770"
+                    }
+                }
+            },
+            "card13": {
+                "model": "ZA_CU_Q_FI_015_CDS",
+                "template": "sap.ovp.cards.charts.analytical",
+                "settings": {
+                    "title": "{{card13_title}}",
+                    "subTitle": "{{card06_info}}",
+                    "entitySet": "ZA_CU_Q_FI_015Results",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_015_ssb",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Selection_STMbyYear",
+                    "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#Present01",
+                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#ChartSTMbyYear",
+                    "navigation": "dataPointNav",
+                    "valueSelectionInfo": "{{card06_info}}",
+                    "defaultSpan": {
+                        "showOnlyHeader": false,
+                        "rows": 3,
+                        "cols": 1
+                    },
+                    "staticParameters": {
+                        "EvaluationId": "E.1573461178758",
+                        "ViewId": "V.1573461228224"
+                    }
+                }
+            }
+        }
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/sap/zfiana101",
+        "_version": "1.1.0"
+    }
+}
