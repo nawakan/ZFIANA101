@@ -1,0 +1,156 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZA_CU_Q_FI_011_POC_CDS/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZA_CU_Q_FI_011_POC_CDS"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Measures.V1.xml">
+		<edmx:Include Alias="Measures" Namespace="Org.OData.Measures.V1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
+			Namespace="ZCU_OVP_FI002.localService.ZA_CU_Q_FI_011_POC_CDS.annotation_fi011.ZA_CU_Q_FI_011_POC_CDS">
+			<Annotations Target="Metadata.ZA_CU_Q_FI_011_POCResult">
+				<Annotation Term="UI.Identification" Qualifier="fi_011_poc_ssb">
+					<Collection>
+						<Record Type="UI.DataFieldForIntentBasedNavigation">
+							<PropertyValue Property="SemanticObject" String="FioriApplication"/>
+							<PropertyValue Property="Action" String="fi_011_poc_ssb"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.KPI" Qualifier="KpiROIbyYear">
+					<Record Type="UI.KPIType">
+						<PropertyValue Property="SelectionVariant">
+							<Record Type="UI.SelectionVariantType">
+								<PropertyValue Property="Parameters">
+									<Collection>
+										<Record Type="UI.Parameter">
+											<PropertyValue Property="PropertyName" PropertyPath="Parameters/P_Year"/>
+											<PropertyValue Property="PropertyValue" String="2020"/>
+										</Record>
+									</Collection>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="DataPoint">
+							<Record Type="UI.DataPointType">
+								<PropertyValue Property="Value" Path="ROIKpi"/>
+								<PropertyValue Property="ValueFormat">
+									<Record Type="UI.NumberFormat">
+										<PropertyValue Property="NumberOfFractionalDigits" Int="2"/>
+									</Record>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="Detail">
+							<Record Type="UI.KPIDetailType">
+								<PropertyValue Property="DefaultPresentationVariant">
+									<Record Type="UI.PresentationVariantType">
+										<PropertyValue Property="Visualizations">
+											<Collection>
+												<AnnotationPath>@UI.Chart#ChartROIbyYear</AnnotationPath>
+											</Collection>
+										</PropertyValue>
+									</Record>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="ID" String="KpiROIbyYear"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Chart" Qualifier="ChartROIbyYear">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Line"/>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="FiscalYear"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="ROIInclude"/>
+								</Record>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="ROIExclude"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.KPI" Qualifier="KpiROIbyMonth">
+					<Record Type="UI.KPIType">
+						<PropertyValue Property="SelectionVariant">
+							<Record Type="UI.SelectionVariantType">
+								<PropertyValue Property="Parameters">
+									<Collection>
+										<Record Type="UI.Parameter">
+											<PropertyValue Property="PropertyName" PropertyPath="Parameters/P_Year"/>
+											<PropertyValue Property="PropertyValue" String="2020"/>
+										</Record>
+									</Collection>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="DataPoint">
+							<Record Type="UI.DataPointType">
+								<PropertyValue Property="Value" Path="ROIKpi"/>
+								<PropertyValue Property="ValueFormat">
+									<Record Type="UI.NumberFormat">
+										<PropertyValue Property="NumberOfFractionalDigits" Int="2"/>
+									</Record>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="Detail">
+							<Record Type="UI.KPIDetailType">
+								<PropertyValue Property="DefaultPresentationVariant">
+									<Record Type="UI.PresentationVariantType">
+										<PropertyValue Property="Visualizations">
+											<Collection>
+												<AnnotationPath>@UI.Chart#ChartROIbyMonth</AnnotationPath>
+											</Collection>
+										</PropertyValue>
+									</Record>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="ID" String="KpiROIbyMonth"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Chart" Qualifier="ChartROIbyMonth">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Line"/>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="FiscalYear"/>
+								</Record>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="Zperiod"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="ROIExclude"/>
+								</Record>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="ROIInclude"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.ZA_CU_Q_FI_011_POCResult/ROIKpi">
+				<Annotation Term="Measures.Unit" String="%"/>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

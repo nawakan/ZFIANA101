@@ -1,1 +1,119 @@
-sap.ui.define(["sap/ui/core/util/MockServer"],function(e){"use strict";var t,r="com.cu.ovp.fi002.ZCU_OVP_FI002/";return{init:function(){var a=jQuery.sap.getUriParameters(),s=jQuery.sap.getModulePath(r+"manifest",".json"),n="",i=a.get("errorType"),o=i==="badRequest"?400:500,u=jQuery.sap.syncGetJSON(s).data,p=u["sap.app"].dataSources;for(var l in p){if(p.hasOwnProperty(l)){var c=p[l],f=jQuery.sap.getModulePath(r+c.settings.localUri.replace(".xml",""),".xml"),d=f.slice(0,f.lastIndexOf("/")+1),g=c.settings.localUri;if(c.settings&&c.settings.localUri){if(typeof c.type==="undefined"||c.type==="OData"){var y=jQuery.sap.getModulePath(r+c.settings.localUri.replace(".xml",""),".xml");t=new e({rootUri:/.*\/$/.test(c.uri)?c.uri:c.uri+"/"});t.simulate(y,{sMockdataBaseUrl:d,bGenerateMissingMockData:true});t.start()}}var m=c.settings.annotations||[];m.forEach(function(t){var a=p[t];var s=a.uri,n=jQuery.sap.getModulePath(r+a.settings.localUri.replace(".xml",""),".xml");new e({rootUri:s,requests:[{method:"GET",path:new RegExp(""),response:function(e){jQuery.sap.require("jquery.sap.xml");var t=jQuery.sap.sjax({url:n,dataType:"xml"}).data;e.respondXML(200,{},jQuery.sap.serializeXML(t));return true}}]}).start()})}}e.config({autoRespond:true,autoRespondAfter:a.get("serverDelay")||1e3});var h=t.getRequests(),v=function(e,t,r){r.response=function(r){r.respond(e,{"Content-Type":"text/plain;charset=utf-8"},t)}};if(a.get("metadataError")){h.forEach(function(e){if(e.path.toString().indexOf("$metadata")>-1){v(500,"metadata Error",e)}})}if(i){h.forEach(function(e){if(e.path.toString().indexOf(n)>-1){v(o,i,e)}})}t.start();jQuery.sap.log.info("Running the app with mock data")},getMockServer:function(){return t}}});
+sap.ui.define([
+	"sap/ui/core/util/MockServer"
+], function (MockServer) {
+	"use strict";
+	var oMockServer,
+		_sAppModulePath = "com.cu.ovp.fi002.ZCU_OVP_FI002/";
+
+	return {
+		/**
+		 * Initializes the mock server.
+		 * You can configure the delay with the URL parameter "serverDelay".
+		 * The local mock data in this folder is returned instead of the real data for testing.
+		 * @public
+		 */
+		init: function () {
+			var oUriParameters = jQuery.sap.getUriParameters(),
+				sManifestUrl = jQuery.sap.getModulePath(_sAppModulePath + "manifest", ".json"),
+				sEntity = "",
+				//entities = "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+				sErrorParam = oUriParameters.get("errorType"),
+				iErrorCode = sErrorParam === "badRequest" ? 400 : 500,
+				oManifest = jQuery.sap.syncGetJSON(sManifestUrl).data,
+				oDataSources = oManifest["sap.app"].dataSources;
+			for (var property in oDataSources) {
+				if (oDataSources.hasOwnProperty(property)) {
+					var sDataSource = oDataSources[property],
+						sMetadataUrl = jQuery.sap.getModulePath(_sAppModulePath + sDataSource.settings.localUri.replace(".xml", ""), ".xml"),
+						sJsonFilesUrl = sMetadataUrl.slice(0, sMetadataUrl.lastIndexOf("/") + 1),
+						sUri = sDataSource.settings.localUri;
+
+					if (sDataSource.settings && sDataSource.settings.localUri) {
+						if (typeof sDataSource.type === "undefined" || sDataSource.type === "OData") {
+							var sLocalUri = jQuery.sap.getModulePath(_sAppModulePath + sDataSource.settings.localUri.replace(".xml", ""), ".xml");
+							oMockServer = new MockServer({
+								rootUri: /.*\/$/.test(sDataSource.uri) ? sDataSource.uri : sDataSource.uri + "/"
+							});
+							oMockServer.simulate(sLocalUri, {
+								sMockdataBaseUrl: sJsonFilesUrl,
+								bGenerateMissingMockData: true
+							});
+							oMockServer.start();
+						}
+					}
+					var aAnnotations = sDataSource.settings.annotations || [];
+					aAnnotations.forEach(function (sAnnotationName) {
+						var oAnnotation = oDataSources[sAnnotationName];
+						var sAnnoUri = oAnnotation.uri,
+							sLocalAnnoUri = jQuery.sap.getModulePath(_sAppModulePath + oAnnotation.settings.localUri.replace(".xml", ""), ".xml");
+
+						///annotiaons
+						new MockServer({
+							rootUri: sAnnoUri,
+							requests: [{
+								method: "GET",
+								path: new RegExp(""),
+								response: function (oXhr) {
+									jQuery.sap.require("jquery.sap.xml");
+
+									var oAnnotations = jQuery.sap.sjax({
+										url: sLocalAnnoUri,
+										dataType: "xml"
+									}).data;
+
+									oXhr.respondXML(200, {}, jQuery.sap.serializeXML(oAnnotations));
+									return true;
+								}
+							}]
+
+						}).start();
+					});
+				}
+			}
+
+			// configure mock server with a delay of 1s
+			MockServer.config({
+				autoRespond: true,
+				autoRespondAfter: (oUriParameters.get("serverDelay") || 1000)
+			});
+
+			var aRequests = oMockServer.getRequests(),
+				fnResponse = function (iErrCode, sMessage, aRequest) {
+					aRequest.response = function (oXhr) {
+						oXhr.respond(iErrCode, {
+							"Content-Type": "text/plain;charset=utf-8"
+						}, sMessage);
+					};
+				};
+
+			// handling the metadata error test
+			if (oUriParameters.get("metadataError")) {
+				aRequests.forEach(function (aEntry) {
+					if (aEntry.path.toString().indexOf("$metadata") > -1) {
+						fnResponse(500, "metadata Error", aEntry);
+					}
+				});
+			}
+
+			// Handling request errors
+			if (sErrorParam) {
+				aRequests.forEach(function (aEntry) {
+					if (aEntry.path.toString().indexOf(sEntity) > -1) {
+						fnResponse(iErrorCode, sErrorParam, aEntry);
+					}
+				});
+			}
+			oMockServer.start();
+
+			jQuery.sap.log.info("Running the app with mock data");
+
+		},
+		/**
+		 * @public returns the mockserver of the app, should be used in integration tests
+		 * @returns {sap.ui.core.util.MockServer}
+		 */
+		getMockServer: function () {
+			return oMockServer;
+		}
+	};
+});

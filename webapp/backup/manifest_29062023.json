@@ -181,23 +181,6 @@
                     "localUri": "localService/annotation_fi011.xml"
                 }
             },
-            "ZA_CU_Q_FI_011_POC_CDS": {
-                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_011_POC_CDS/",
-                "type": "OData",
-                "settings": {
-                    "annotations": [
-                        "annotation_fi011_poc"
-                    ],
-                    "localUri": "localService/metadata.xml"
-                }
-            },
-            "annotation_fi011_poc": {
-                "type": "ODataAnnotation",
-                "uri": "localService/ZA_CU_Q_FI_011_POC_CDS/annotation_fi011_poc.xml",
-                "settings": {
-                    "localUri": "localService/annotation_fi011_poc.xml"
-                }
-            },
             "ZA_CU_Q_FI_012_CDS": {
                 "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_012_CDS/",
                 "type": "OData",
@@ -465,16 +448,6 @@
                 "dataSource": "ZA_CU_Q_FI_011_CDS",
                 "preload": true
             },
-            "ZA_CU_Q_FI_011_POC_CDS": {
-                "type": "sap.ui.model.odata.v2.ODataModel",
-                "settings": {
-                    "defaultOperationMode": "Server",
-                    "defaultBindingMode": "OneWay",
-                    "defaultCountMode": "Request"
-                },
-                "dataSource": "ZA_CU_Q_FI_011_POC_CDS",
-                "preload": true
-            },
             "ZA_CU_Q_FI_012_CDS": {
                 "type": "sap.ui.model.odata.v2.ODataModel",
                 "settings": {
@@ -580,6 +553,7 @@
             "showDataLabel": false
         },
         "cards": {
+           
             "card_05": {
                 "model": "ZA_CU_Q_FI_005_CDS",
                 "template": "sap.ovp.cards.linklist",
@@ -592,6 +566,7 @@
                         "cols": 1
                     },
                     "staticContent": [
+
                         {
                             "imageUri": "../img/RemarkFICard5.png",
                             "openInNewWindow": false
@@ -635,19 +610,19 @@
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyYear",
-                            "value": "ปีบัญชี"
+                            "value": "\u0e1b\u0e35\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyQuart",
-                            "value": "ไตรมาส"
+                            "value": "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyMonth",
-                            "value": "งวด"
+                            "value": "\u0e07\u0e27\u0e14"
                         }
                     ]
                 }
@@ -676,19 +651,19 @@
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyYear",
-                            "value": "ปีบัญชี"
+                            "value": "\u0e1b\u0e35\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyQuart",
-                            "value": "ไตรมาส"
+                            "value": "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyMonth",
-                            "value": "งวด"
+                            "value": "\u0e07\u0e27\u0e14"
                         }
                     ]
                 }
@@ -717,19 +692,19 @@
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyYear",
-                            "value": "ปีบัญชี"
+                            "value": "\u0e1b\u0e35\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyQuart",
-                            "value": "ไตรมาส"
+                            "value": "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a"
                         },
                         {
                             "navigation": "dataPointNav",
                             "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_ssb",
                             "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyMonth",
-                            "value": "งวด"
+                            "value": "\u0e07\u0e27\u0e14"
                         }
                     ]
                 }
@@ -777,28 +752,6 @@
                     "staticParameters": {
                         "EvaluationId": "E.1573461178758",
                         "ViewId": "V.1573461228224"
-                    }
-                }
-            },
-            "card14": {
-                "model": "ZA_CU_Q_FI_011_POC_CDS",
-                "template": "sap.ovp.cards.charts.analytical",
-                "settings": {
-                    "title": "{{card14_title}}",
-                    "subTitle": "{{card14_subtitle}}",
-                    "entitySet": "ZA_CU_Q_FI_011_POCResults",
-                    "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiROIbyYear",
-                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_011_poc_ssb",
-                    "navigation": "dataPointNav",
-                    "valueSelectionInfo": "{{card06_info}}",
-                    "defaultSpan": {
-                        "showOnlyHeader": false,
-                        "rows": 3,
-                        "cols": 1
-                    },
-                    "staticParameters": {
-                        "EvaluationId": "E.1688006646929",
-                        "ViewId": "V20230629024433.0833500"
                     }
                 }
             }
