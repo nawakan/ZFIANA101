@@ -19,6 +19,6 @@ builder:
           name: ZFIANA101
           description: ""
           package: ZFIORI
-          transport: FEDK903092
+          transport: FEDK903120
         exclude:
           - /test/

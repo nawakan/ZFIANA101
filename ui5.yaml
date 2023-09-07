@@ -19,6 +19,18 @@ server:
           - path: /sap
             url: https://www.cuerpapp.chula.ac.th:441
             client: '900'
+          - path: /sap
+            url: https://www.cuerpapp.chula.ac.th:441
+            client: '900'
+          - path: /sap/opu/odata/sap/ZA_CU_Q_FI_011_TUNE_CDS/
+            url: https://www.cuerpapp.chula.ac.th:441
+            client: '900'
+          - path: /sap/opu/odata/sap/ZA_CU_Q_FI_009_TUNE_CDS
+            url: https://www.cuerpapp.chula.ac.th:441
+            client: '900'
+          - path: /sap/opu/odata/sap/ZA_CU_Q_FI_010_TUNE_CDS/
+            url: https://www.cuerpapp.chula.ac.th:441
+            client: '900'
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

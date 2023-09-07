@@ -147,23 +147,6 @@
                     "localUri": "localService/annotation_fi009.xml"
                 }
             },
-            "ZA_CU_Q_FI_009_TUNE_CDS": {
-                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_009_TUNE_CDS/",
-                "type": "OData",
-                "settings": {
-                    "annotations": [
-                        "annotation_fi009_tune"
-                    ],
-                    "localUri": "localService/metadata.xml"
-                }
-            },
-            "annotation_fi009_tune": {
-                "type": "ODataAnnotation",
-                "uri": "localService/ZA_CU_Q_FI_009_TUNE_CDS/annotation_fi009_tune.xml",
-                "settings": {
-                    "localUri": "localService/annotation_fi009_tune.xml"
-                }
-            },
             "ZA_CU_Q_FI_010_CDS": {
                 "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_010_CDS/",
                 "type": "OData",
@@ -179,24 +162,6 @@
                 "uri": "localService/ZA_CU_Q_FI_010_CDS/annotation_fi010.xml",
                 "settings": {
                     "localUri": "localService/annotation_fi010.xml"
-                }
-            },
-            "ZA_CU_Q_FI_010_TUNE_CDS": {
-                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_010_TUNE_CDS/",
-                "type": "OData",
-                "settings": {
-                    "annotations": [
-                        "annotation_fi010_tune"
-                    ],
-                    "localUri": "localService/metadata.xml",
-                    "odataVersion": "2.0"
-                }
-            },
-            "annotation_fi010_tune": {
-                "type": "ODataAnnotation",
-                "uri": "localService/ZA_CU_Q_FI_010_TUNE_CDS/annotation_fi010_tune.xml",
-                "settings": {
-                    "localUri": "localService/annotation_fi010_tune.xml"
                 }
             },
             "ZA_CU_Q_FI_011_CDS": {
@@ -216,22 +181,21 @@
                     "localUri": "localService/annotation_fi011.xml"
                 }
             },
-            "ZA_CU_Q_FI_011_TUNE_CDS": {
-                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_011_TUNE_CDS/",
+            "ZA_CU_Q_FI_011_POC_CDS": {
+                "uri": "/sap/opu/odata/sap/ZA_CU_Q_FI_011_POC_CDS/",
                 "type": "OData",
                 "settings": {
                     "annotations": [
-                        "annotation_fi011_tune"
+                        "annotation_fi011_poc"
                     ],
-                    "localUri": "localService/metadata.xml",
-                    "odataVersion": "2.0"
+                    "localUri": "localService/metadata.xml"
                 }
             },
-            "annotation_fi011_tune": {
+            "annotation_fi011_poc": {
                 "type": "ODataAnnotation",
-                "uri": "localService/ZA_CU_Q_FI_011_TUNE_CDS/annotation_fi011_tune.xml",
+                "uri": "localService/ZA_CU_Q_FI_011_POC_CDS/annotation_fi011_poc.xml",
                 "settings": {
-                    "localUri": "localService/annotation_fi011_tune.xml"
+                    "localUri": "localService/annotation_fi011_poc.xml"
                 }
             },
             "ZA_CU_Q_FI_012_CDS": {
@@ -481,16 +445,6 @@
                 "dataSource": "ZA_CU_Q_FI_009_CDS",
                 "preload": true
             },
-            "ZA_CU_Q_FI_009_TUNE_CDS": {
-                "type": "sap.ui.model.odata.v2.ODataModel",
-                "settings": {
-                    "defaultOperationMode": "Server",
-                    "defaultBindingMode": "OneWay",
-                    "defaultCountMode": "Request"
-                },
-                "dataSource": "ZA_CU_Q_FI_009_TUNE_CDS",
-                "preload": true
-            },
             "ZA_CU_Q_FI_010_CDS": {
                 "type": "sap.ui.model.odata.v2.ODataModel",
                 "settings": {
@@ -499,16 +453,6 @@
                     "defaultCountMode": "Request"
                 },
                 "dataSource": "ZA_CU_Q_FI_010_CDS",
-                "preload": true
-            },
-            "ZA_CU_Q_FI_010_TUNE_CDS": {
-                "type": "sap.ui.model.odata.v2.ODataModel",
-                "settings": {
-                    "defaultOperationMode": "Server",
-                    "defaultBindingMode": "OneWay",
-                    "defaultCountMode": "Request"
-                },
-                "dataSource": "ZA_CU_Q_FI_010_TUNE_CDS",
                 "preload": true
             },
             "ZA_CU_Q_FI_011_CDS": {
@@ -521,14 +465,14 @@
                 "dataSource": "ZA_CU_Q_FI_011_CDS",
                 "preload": true
             },
-            "ZA_CU_Q_FI_011_TUNE_CDS": {
+            "ZA_CU_Q_FI_011_POC_CDS": {
                 "type": "sap.ui.model.odata.v2.ODataModel",
                 "settings": {
                     "defaultOperationMode": "Server",
                     "defaultBindingMode": "OneWay",
                     "defaultCountMode": "Request"
                 },
-                "dataSource": "ZA_CU_Q_FI_011_TUNE_CDS",
+                "dataSource": "ZA_CU_Q_FI_011_POC_CDS",
                 "preload": true
             },
             "ZA_CU_Q_FI_012_CDS": {
@@ -836,138 +780,15 @@
                     }
                 }
             },
-            "card15": {
-                "model": "ZA_CU_Q_FI_009_TUNE_CDS",
+            "card14": {
+                "model": "ZA_CU_Q_FI_011_POC_CDS",
                 "template": "sap.ovp.cards.charts.analytical",
                 "settings": {
-                    "title": "{{card15_title}}",
-                    "entitySet": "ZA_CU_Q_FI_009_TUNEResults",
-                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
-                    "navigation": "dataPointNav",
-                    "valueSelectionInfo": "{{card06_info}}",
-                    "customParams": "FilterPeriod",
-                    "defaultSpan": {
-                        "showOnlyHeader": false,
-                        "rows": 3,
-                        "cols": 1
-                    },
-                    "staticParameters": {
-                        "EvaluationId": "E.1693298117280",
-                        "ViewId": "V20230829083611.1677940"
-                    },
-                    "tabs": [
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyYear",
-                            "value": "ปีบัญชี"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyQuart",
-                            "value": "ไตรมาส"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossbinv001",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiInvbyMonth",
-                            "value": "งวด"
-                        }
-                    ]
-                }
-            },
-            "card16": {
-                "model": "ZA_CU_Q_FI_009_TUNE_CDS",
-                "template": "sap.ovp.cards.charts.analytical",
-                "settings": {
-                    "title": "{{card16_title}}",
-                    "entitySet": "ZA_CU_Q_FI_009_TUNEResults",
-                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
-                    "navigation": "dataPointNav",
-                    "valueSelectionInfo": "{{card06_info}}",
-                    "customParams": "FilterPeriod",
-                    "defaultSpan": {
-                        "showOnlyHeader": false,
-                        "rows": 3,
-                        "cols": 1
-                    },
-                    "staticParameters": {
-                        "EvaluationId": "E.1693298529252",
-                        "ViewId": "V20230829084259.8384150"
-                    },
-                    "tabs": [
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyYear",
-                            "value": "ปีบัญชี"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyQuart",
-                            "value": "ไตรมาส"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Tossb_fi_invest",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiCashInvbyMonth",
-                            "value": "งวด"
-                        }
-                    ]
-                }
-            },
-            "card17": {
-                "model": "ZA_CU_Q_FI_010_TUNE_CDS",
-                "template": "sap.ovp.cards.charts.analytical",
-                "settings": {
-                    "title": "{{card17_title}}",
-                    "entitySet": "ZA_CU_Q_FI_010_TUNEResults",
-                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_v3_ssb",
-                    "navigation": "dataPointNav",
-                    "valueSelectionInfo": "{{card06_info}}",
-                    "customParams": "FilterPeriod",
-                    "defaultSpan": {
-                        "showOnlyHeader": false,
-                        "rows": 3,
-                        "cols": 1
-                    },
-                    "staticParameters": {
-                        "EvaluationId": "E.1693298906121",
-                        "ViewId": "V20230829084912.7126470"
-                    },
-                    "tabs": [
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_v3_ssb",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyYear",
-                            "value": "ปีบัญชี"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_v3_ssb",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyQuart",
-                            "value": "ไตรมาส"
-                        },
-                        {
-                            "navigation": "dataPointNav",
-                            "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_010_v3_ssb",
-                            "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiLiquiditybyMonth",
-                            "value": "งวด"
-                        }
-                    ]
-                }
-            },
-            "card18": {
-                "model": "ZA_CU_Q_FI_011_TUNE_CDS",
-                "template": "sap.ovp.cards.charts.analytical",
-                "settings": {
-                    "title": "{{card18_title}}",
-                    "subTitle": "{{card18_subtitle}}",
-                    "entitySet": "ZA_CU_Q_FI_011_TUNEResults",
+                    "title": "{{card14_title}}",
+                    "subTitle": "{{card14_subtitle}}",
+                    "entitySet": "ZA_CU_Q_FI_011_POCResults",
                     "kpiAnnotationPath": "com.sap.vocabularies.UI.v1.KPI#KpiROIbyYear",
-                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_011_v3_ssb",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#fi_011_poc_ssb",
                     "navigation": "dataPointNav",
                     "valueSelectionInfo": "{{card06_info}}",
                     "defaultSpan": {
@@ -976,8 +797,8 @@
                         "cols": 1
                     },
                     "staticParameters": {
-                        "EvaluationId": "E.1693298722220",
-                        "ViewId": "V20230829084609.4259850"
+                        "EvaluationId": "E.1688006646929",
+                        "ViewId": "V20230629024433.0833500"
                     }
                 }
             }
